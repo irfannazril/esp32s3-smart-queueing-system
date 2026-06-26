@@ -46,3 +46,5 @@ Proses perakitan sistem digital ini memiliki beberapa tantangan khusus yang berh
   ![Foto Aplikasi Web Server ESP32-S3](images/Smart-Queueing-System-WebApp.jpg)
 * [Video Penjelasan Project]
   https://youtube.com/shorts/Kd2lgHZTZds?si=a0qoj_4h-vZTpTNv
+* [LinkedIn]
+  https://www.linkedin.com/posts/irfannazril_elektronikadigital-iot-embeddedsystems-ugcPost-7473794222920470528-VVTZ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAERhsnwBjF_VUf9EbxjIvbiume9VyBmdP1s
