@@ -40,12 +40,14 @@ Proses perakitan sistem digital ini memiliki beberapa tantangan khusus yang berh
 ## 📸 Dokumentasi Prototipe Fisik
 *(Sertakan foto alat yang sudah dirakit, fokuskan pada detail wiring yang rapi atau layar saat menyala)*
 * [Foto Proses Prototyping Alat Smart Queueing System] <br>
-  ![Foto Prototyping Smart Queueing System](images/Prototyping-Smart-Queueing-System.jpg) <br>
+  <img width="400" height="300" alt="Prototyping-Smart-Queueing-System" src="https://github.com/user-attachments/assets/123c6677-0f87-4dbd-aac2-dff5d82c82b3" /> <br>
+  
 * [Foto keseluruhan Alat Smart Queueing System] <br>
-  ![Foto Alat Smart Queueing System front](images/Smart-Queueing-System-Front.jpg) <br>
-  ![Foto Alat Smart Queueing System back](images/Smart-Queueing-System-Back.jpg)
+  <img width="384" height="216" alt="Smart-Queueing-System-Front" src="https://github.com/user-attachments/assets/89f830e4-124e-4748-8e1d-d26c9e846c54" /> <br>
+  <img width="400" height="300" alt="Smart-Queueing-System-Back" src="https://github.com/user-attachments/assets/7af9e684-dc20-45d3-bbd0-6bedea785b81" /> <br>
 * [Foto Aplikasi Pada Web Server ESP32-S3] <br>
-  ![Foto Aplikasi Web Server ESP32-S3](images/Smart-Queueing-System-WebApp.jpg)
+  <img width="369" height="800" alt="Smart-Queueing-System-WebApp" src="https://github.com/user-attachments/assets/9fa271a5-df54-43cc-9e9f-4e111f45c8ee" />
+
 * [Video Penjelasan Project] <br>
   https://youtube.com/shorts/Kd2lgHZTZds?si=a0qoj_4h-vZTpTNv
 * [LinkedIn] <br>
