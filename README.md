@@ -16,14 +16,14 @@ Sebagai penanggung jawab perangkat keras (Hardware Executor), tugas teknis saya 
 * **Integrated Circuit:** 74HC48 BCD Decoder, 74HC192 Decade Counter, dan NE555 Timer.
 * **Modul Input:** Push Button.
 * **Modul Output:** Seven Segment Common Cathode.
-* **Komponen Pasif:** Resistor (untuk konfigurasi *pull-up/pull-down*), kapasitor, kabel jumper, PCB dot matrix.
+* **Komponen Pasif:** Resistor (untuk konfigurasi *pull-up/pull-down*), kapasitor, Dioda, kabel jumper, PCB dot matrix.
 
 ## 📐 Skematik Rangkaian dan Arsitektur
-*(Unggah gambar skematik yang Anda buat di sini)*
+<br>
 ![Skematik Smart Queue](images/skematik-smart-queue.png)
 
 **Pemilihan ESP32-S3:**
-Mikrokontroler ini dipilih karena jumlah pin GPIO-nya yang melimpah, sangat ideal untuk menangani banyak perangkat input (tombol loket) dan output (layar antrean) secara bersamaan tanpa memerlukan IC *multiplexer* tambahan. Selain itu, fitur WiFi *built-in* memungkinkan sistem ini dikembangkan lebih lanjut menjadi antrean berbasis *web*.
+Mikrokontroler ini dipilih karena jumlah pin GPIO-nya yang melimpah dan memiliki output 5V, sangat ideal untuk menangani banyak perangkat input (tombol loket) dan output (seven segment) secara bersamaan tanpa memerlukan IC *multiplexer* tambahan. Selain itu, fitur WiFi *built-in* memungkinkan sistem ini dikembangkan lebih lanjut menjadi antrean berbasis *web*.
 
 ## 🚧 Tantangan Teknis & Pemecahan Masalah
 Proses perakitan sistem digital ini memiliki beberapa tantangan khusus yang berhasil diselesaikan:
