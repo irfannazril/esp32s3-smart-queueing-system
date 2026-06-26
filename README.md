@@ -18,15 +18,15 @@ Sebagai penanggung jawab perangkat keras (Hardware Executor), tugas teknis saya 
 * **Modul Output:** Seven Segment Common Cathode.
 * **Komponen Pasif:** Resistor (untuk konfigurasi *pull-up/pull-down*), kapasitor, Dioda, kabel jumper, PCB dot matrix.
 
-## 📐 Skematik Rangkaian dan Arsitektur
+## 📐 Skematik Rangkaian dan Arsitektur <br>
 ![Skematik Smart Queue](images/skematik-smart-queue.png)
 
 **ESP32-S3:**
-Mikrokontroler ini dipilih karena jumlah pin GPIO-nya yang melimpah dan memiliki output 5V, sangat ideal untuk menangani banyak perangkat input (tombol loket) dan output (seven segment) secara bersamaan tanpa memerlukan IC *multiplexer* tambahan. Selain itu, fitur WiFi *built-in* memungkinkan sistem ini dikembangkan lebih lanjut menjadi antrean berbasis *web*.
+Mikrokontroler ini dipilih karena jumlah pin GPIO-nya yang melimpah dan memiliki output 5V, sangat ideal untuk menangani banyak perangkat input (tombol loket) dan output (seven segment) secara bersamaan tanpa memerlukan IC *multiplexer* tambahan. Selain itu, fitur WiFi *built-in* memungkinkan sistem ini dikembangkan lebih lanjut menjadi antrean berbasis *web*. <br>
 **IC NE555 Timer:**
-Dikonfigurasi dalam mode *Monostable Multivibrator* yang berfungsi sebagai unit signal conditioner dari push button. Menghilangkan efek getaran mekanis (bouncing) pada lempengan tombol saat ditekan user yang bisa menyebabkan eror hitungan. Keluaran pulsa dari IC ini bertindak sebagai sinyal Clock Up utama untuk menggerakkan IC pencacah angka.
+Dikonfigurasi dalam mode *Monostable Multivibrator* yang berfungsi sebagai unit signal conditioner dari push button. Menghilangkan efek getaran mekanis (bouncing) pada lempengan tombol saat ditekan user yang bisa menyebabkan eror hitungan. Keluaran pulsa dari IC ini bertindak sebagai sinyal Clock Up utama untuk menggerakkan IC pencacah angka. <br>
 **IC 74HC192 Decade Counter:**
-Sebuah Synchronous 4-Bit Up/Down Decade Counter yang berfungsi sebagai otak penyimpan memori hitungan aritmatika. Secara alami menghitung bilangan biner dari nilai 0 hingga 9 (0000 sampai 1001) dan otomatis meriset kembali ke 0 pada pulsa ke-10. Memiliki pin Terminal Count Up (TCU) yang mengirimkan pulsa otomatis ke IC digit berikutnya (puluhan) ketika digit satuan berganti dari angka 9 ke 0, sehingga sistem dapat menghitung hingga angka 99.
+Sebuah Synchronous 4-Bit Up/Down Decade Counter yang berfungsi sebagai otak penyimpan memori hitungan aritmatika. Secara alami menghitung bilangan biner dari nilai 0 hingga 9 (0000 sampai 1001) dan otomatis meriset kembali ke 0 pada pulsa ke-10. Memiliki pin Terminal Count Up (TCU) yang mengirimkan pulsa otomatis ke IC digit berikutnya (puluhan) ketika digit satuan berganti dari angka 9 ke 0, sehingga sistem dapat menghitung hingga angka 99. <br>
 **IC 74HC48 Decoder Seven Segment:**
 Komponen ini bertanggung jawab penuh dalam menjembatani komunikasi data mesin ke visual yang mudah dibaca oleh manusia. Menerima data biner 4-bit dari IC Counter dan menerjemahkannya menjadi 7 jalur logika keluaran aktif (Active-High).
 
@@ -39,12 +39,14 @@ Proses perakitan sistem digital ini memiliki beberapa tantangan khusus yang berh
 
 ## 📸 Dokumentasi Prototipe Fisik
 *(Sertakan foto alat yang sudah dirakit, fokuskan pada detail wiring yang rapi atau layar saat menyala)*
-* [Foto keseluruhan alat Smart Queueing System]
-  ![Foto alat Smart Queueing System front](images/Smart-Queueing-System-Front.jpg)
-  ![Foto alat Smart Queueing System back](images/Smart-Queueing-System-Back.jpg)
-* [Foto Aplikasi Pada Web Server ESP32-S3]
+* [Foto Proses Prototyping Alat Smart Queueing System] <br>
+  ![Foto Prototyping Smart Queueing System](images/Prototyping-Smart-Queueing-System.jpg) <br>
+* [Foto keseluruhan Alat Smart Queueing System] <br>
+  ![Foto Alat Smart Queueing System front](images/Smart-Queueing-System-Front.jpg) <br>
+  ![Foto Alat Smart Queueing System back](images/Smart-Queueing-System-Back.jpg)
+* [Foto Aplikasi Pada Web Server ESP32-S3] <br>
   ![Foto Aplikasi Web Server ESP32-S3](images/Smart-Queueing-System-WebApp.jpg)
-* [Video Penjelasan Project]
+* [Video Penjelasan Project] <br>
   https://youtube.com/shorts/Kd2lgHZTZds?si=a0qoj_4h-vZTpTNv
-* [LinkedIn]
+* [LinkedIn] <br>
   https://www.linkedin.com/posts/irfannazril_elektronikadigital-iot-embeddedsystems-ugcPost-7473794222920470528-VVTZ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAERhsnwBjF_VUf9EbxjIvbiume9VyBmdP1s
